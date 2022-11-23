@@ -117,7 +117,7 @@ body {
   font-size: 20px;
   letter-spacing: 1px;
   color: white;
-  background-color: red;
+  background-color: #e50914;
   border: 0;
 }
 
@@ -150,7 +150,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  text-align: left;
   padding: 100px 80px 100px 100px;
   
 }
@@ -187,12 +186,9 @@ body {
 
 .text {
   color: white;
-  display: flex;
-  flex-direction: column;
+  align-content: center;
   align-items: flex-start;
   justify-content: flex-start;
-  align-self: center;
-  align-content: center;
 }
 .text h3 {
   font-size: 1.6rem;
@@ -213,7 +209,7 @@ body {
     border: 2px solid grey;
     background-color: #000;
     border-radius: 10px;
-    max-width: 300px;
+    width: 320px;
     height: 100px;
     margin-top: 250px;
     
@@ -234,6 +230,12 @@ body {
   color: blue;
   margin-top: -12px;
   font-weight: normal;
+}
+div .image1 {
+  filter: brightness(0) invert(1);
+  width: 20px;
+  margin-top: -330px;
+  margin-left: 250px;
 }
 
 .question {

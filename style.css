@@ -1,571 +1,243 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-body {
+* {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+}
+header {
     display: flex;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    background-color: rgba(8, 8, 8, 0.9);
-    color: white;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 56px;
 }
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  min-height: 100px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  align-self: center;
-  padding-top: 0px
+header img {
+    width: 200px;
+    height: 130px;
+    margin-left: -10px;
+    margin-top: -40px;
+    filter: invert(30%) sepia(80%) saturate(7000%) hue-rotate(350deg)
+      brightness(80%) contrast(100%);
 }
-
-.navbar li {
-  margin: 0 30px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
+header a button {
+    background-color: #e50914;
+    border: 1px solid #e50914;
+    border-radius: 4px;
+    padding: 7px 17px;
+    font-size: 16px;
+    cursor: pointer;
 }
-.navbar li:nth-child(2) {
-  margin-top: -10px;
-  margin-right: 60px;
-}
-
-.logo img {
-  width: 170px;
-  display: flex;
-}
-
-.buttons {
-  background-color: #e50914;
-  padding: 7px 10px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: .5px;
-}
-
 .main {
-  width: 100%;
-  margin-top: -100px;
-  background-size: cover;
-  align-items: center;
-  overflow-x: hidden;
-  justify-content: center;
-  display: flex;
-  background-position: center;
-  min-height: 710px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/5aecc44d-2a1f-4313-8399-98df20908b64/fe0d3631-4584-47e4-9cd7-ed68ba375830/NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-color: rgb(0,0,0);
 }
-
-.area {
-    color: white;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 950px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-}
-
-.area h1 {
-  padding: 0px 200px 0px;
-  font-size: 50px;
-  line-height: 55px;
-  font-weight: 600;
-}
-
-.area h3 {
-  margin-top: -20px;
-  font-size: 23px;
-  font-weight: 500;
-}
-.area h4 {
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: 5px;
-}
-
-.search {
-  width: 70%;
-  background-color: none;
-  max-height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  margin-top: -15px;
-}
-.search button {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: white;
-  background-color: #e50914;
-  border: 0;
-}
-
-.box {
-  width: 100%;
-  min-height: 60px;
-  font-size: 15px;
-  padding-left: 10px;
-  border: 0;
-  border-bottom: 2px solid #ffa00a;
-}
-
-.try {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #e50914;
-  min-height: 65px;
-  width: 50%;
-  text-decoration: none;
-}
-
 .container1 {
-  width: 100%;
-  max-height: 275px;
-  background-color: black;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 100px 80px 100px 100px;
-  
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+      url(https://assets.nflxext.com/ffe/siteui/vlv3/5aecc44d-2a1f-4313-8399-98df20908b64/fe0d3631-4584-47e4-9cd7-ed68ba375830/NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
 }
-
-
-.container1 img {
-    position: relative;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    word-spacing: 2px;
+    max-width: 650px;
+    margin-top: -50px;
+}
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+    max-width: 500px;
+}
+h4 {
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+div.mail {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    object-fit: contain;
-    object-position: center;
-    align-self: center;
-    max-width: 100%;
-    height: 600px;
+    align-items: center;
+    margin-top: 20px;
 }
-
-.container1 .image {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  align-self: center;
-  object-fit: contain;
+input {
+    font-size: 16px;
+    color: rgb(0,0,0);
+    min-width: 520px;
+    height: 70px;
+    padding-left: 10px;
+    border: 1px solid #8c8c8c;
+    outline: 0;
 }
-.container1 video {
-    padding-right: 450px;
-    padding-bottom: 14px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    max-width: 24%;
-    max-height: 200px;
+input ~ a button {
+    width: 220px;
+    min-height: 70px;
+    min-width: 76px;
+    border: 1px solid #e50914;
+    background-color: #e50914;
+    font-size: 26px;
+    cursor: pointer;
 }
-
-.text {
-  color: white;
-  align-content: center;
-  align-items: flex-start;
-  justify-content: flex-start;
+h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 65px;
 }
-.text h3 {
-  font-size: 1.6rem;
-  margin-top: 5px;
-  font-weight: normal;
-  margin-top: -22px;
-  margin-right: 260px;
+  
+section {
+    display: flex;
+    border-bottom: 9px solid #222;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 5% 10%;
 }
-
-.text h2 {
-  font-size: 3.1rem;
-  font-weight: 700;
-  margin-left: 2px;
+.to_the_left {
+    max-width: 50%;
 }
-
-.strangerthing {
-    position: absolute;
-    border: 2px solid grey;
-    background-color: #000;
-    border-radius: 10px;
-    width: 320px;
-    height: 100px;
-    margin-top: 250px;
-    
+.to_the_right {
+    width: 50%;
 }
-.stranger img{
+.tv {
+    z-index: 1;
     position: relative;
-    width: 60px;
-    margin-top: -250px;
-    margin-left: 10px;
 }
-.stranger1 {
-  position: relative;
-  margin-top: -340px;
-  margin-left: 90px;
-  font-weight: 700;
+.tv img {
+    float: right;
+    width: 95%;
 }
-.download {
-  color: blue;
-  margin-top: -12px;
-  font-weight: normal;
+.tv_video {
+    position: absolute;
+    transform: translate(50%);
+    top: 134%;
+    right: 300px;
 }
-div .image1 {
-  filter: brightness(0) invert(1);
-  width: 20px;
-  margin-top: -330px;
-  margin-left: 250px;
+video {
+    width: 83%;
 }
-
-.question {
-  width: 100%;
-  min-height: 950px;
-  background-color: #000;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+.mobile img {
+    max-width: 100%;
+    margin-left: -72px;
+    float: left;
+}
+.strangerthing-container {
+    width: 310px;
+    max-width: 100%;
+    background-color: black;
+    border: 3px solid hsla(0, 0%, 100%, 0.25);
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 13px;
+    top: 243%;
+    left: 13.2%;
+    position: absolute;
+}
+.strangerthing {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.strangerthing img {
+    max-width: 50%;
+    height: 70px;
+}
+.strangerthing_img img {
+    height: 50px;
+    float: right;
+}
+.strangerthing1 p {
+    font-weight: 700;
+    font-size: 18px;
+}
+.strangerthing1 .download{
+    color: rgb(0,18,174);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+.contain4 {
+    width: 48%
+}
+.container6 {
+    display: block;
+    padding: 50px 100px;
+}
+.container6 h2 {
   text-align: center;
-}
-
-.question h1 {
-  text-align: center;
-  color: white;
   margin-bottom: 50px;
-  text-align: center;
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-
-.quest {
-  width: 51%;
-  min-height: 75px;
-  background-color: #303030;
-  color: white;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  text-align: left;
-  flex-direction: row;
-  margin: 5px 0;
+.container6 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    padding: 4px 35px;
 }
-
-.quest .textbox {
-  display: flex;
-  text-align: left;
-
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-self: center;
-  font-size: 25px;
-  margin: 0 30px;
-  word-spacing: 5px;
-  text-align: left;
+.container6 span {
+    font-size: 50px;
+    font-weight: 100;
 }
-
-.quest i {
-  margin: 0 30px;
-  font-size: 40px;
-  color: rgb(255, 255, 255);
+details {
+    width: 72%;
+    background-color: #303030;
+    font-size: 26px;
+    margin: 0 auto  9px;
 }
-
-.quest:focus {
-  background-color: red;
+.container6 details p {
+    padding: 35px;
+    border-top: 1px solid black;
 }
-
-.search1 {
-  width: 50%;
-  background-color: none;
-  min-height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  margin-top: 10px;
+.container6 h4 {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 40px;
 }
-
-.box1 {
-  width: 100%;
-  min-height: 65px;
+footer {
+    width: 60vw;
+    padding: 65px 150px 40px 25px;
+    margin: auto;
+    font-size: 13px;
 }
-
-.try1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #e50914;
-  min-height: 70px;
-  width: 70%;
-  color: white;
-  font-size: 30px;
-  margin: 50px 0;
-  text-transform: uppercase;
+footer a {
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+    margin-left: -15px;
 }
-
-.question h4 {
-  color: white;
-  margin-top: -20px;
-  padding-bottom: 40px;
+footer a:hover {
+    text-decoration: underline;
 }
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 375px;
-  background-color: black;
-  margin-top: 10px;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content:space-around;
-
+footer .contact_us {
+    font-size: 16px;
 }
-
-.footercon {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 50px;
-  background-color: transparent;
-}
-
-.footer .flex1 {
-  color:#999;;
-  justify-content:space-around;
-  align-items:flex-start;
-  display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  width:100%;
-  font-size: 17px;
-  min-height: 30px;
-
-}
-
-.footer .flex1 h5 {
-  align-self:flex-start;
-}
-
-.list1 {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-items: flex-start;
-  align-self: center;
-  justify-content: center;
-  min-height:50px;
-  font-size: 13px;
-  padding: 0px 70px;
-  text-align: left;
-}
-
-.list1 li {
-  font-size: 13px;
-  margin: 7px -10px;
-  list-style-type: none;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-items: center;
-  align-self: flex-start;
-  justify-content: center;
-}
-
-.list1 li a {
-  color: #999;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-li a {
-  font-size: 13px;
-  text-align: center;
-  color: #999;
-}
-
-
-.footertxt {
-  color:white;
-  display:flex;
-  flex-direction:row;
-  align-items:flex-end;
-  justify-content: flex-end;
-}
-
-.end {
-  width:100%;
-  min-height:50px;
-background-color: black;
-justify-content:space-around;
-align-items:flex-start;
-display: flex;
-flex-direction:row;
-flex-wrap:wrap;
-color:#999;
-margin-top:-60px;
-}
-
-.end h2 {
-  display:flex;
-  flex-direction: row;
-font-size:16px;
-}
-
-@media (min-width: 250px) and (max-width: 980px) {
-  body {
+footer ul {
+    list-style-type: none;
+    margin: 35px auto 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-self: center;
-  }
-
-  .area h1 {
-    font-size: 40px;
-    line-height:60px;
-  }
-
-  .area h3 {
-    margin-top: 10px;
-  }
-
-  .container1 img {
-    width: 60%;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    min-height: 250px;
-    margin-bottom: 30px;
-
-  }
-
-
-
-  .search {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    width: 50%;
-    margin: 0 10px;
-  }
-
-  .box {
-    width: 100%;
-    margin-bottom: 20px;
-    margin:30px;
-  }
-
-  .try {
-    width: 200px;
-    margin: 0 10px;
-    font-size:17px;
-    min-height:50px;
-  }
-
-  .search1 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    width: 50%;
-    margin: 0 10px;
-    margin-bottom: 40px;
-  }
-
-h4 {
-  color:white;
+    gap: 15px;
 }
-
-  .box1 {
-    width: 100%;
-    margin-bottom: 20px;
-    margin:30px;
-  }
-
-  .try1 {
-    width: 200px;
-    margin: 0 10px;
-    font-size:17px;
-    min-height:50px;
-  }
-  .text {
+.foot {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .text h1 {
-    font-size: 2rem;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .text p {
-    font-size: 1.2rem;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .quest .textbox {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .quest {
-    width: 80%;
-    min-height: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    gap: 70px;
+}
+footer span {
+    color: #999;
+    padding-left: 30px;
+}
+footer .end {
+    padding: 15px;
 }

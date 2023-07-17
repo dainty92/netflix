@@ -241,3 +241,118 @@ footer span {
 footer .end {
     padding: 15px;
 }
+
+@media screen and (max-width: 768px) {
+      header {
+        margin: 0 20px;
+      }
+
+      header img {
+        width: 150px;
+        height: 97px;
+      }
+
+      header a button {
+        padding: 5px 12px;
+        font-size: 14px;
+      }
+
+      .content h1 {
+        font-size: 30px;
+      }
+
+      .content h3 {
+        font-size: 20px;
+      }
+
+      form h4 {
+        font-size: 18px;
+      }
+
+      input {
+        min-width: 250px;
+        height: 50px;
+        font-size: 14px;
+      }
+
+      input ~ a button {
+        width: 150px;
+        min-height: 50px;
+        min-width: 50px;
+        font-size: 18px;
+      }
+
+      section {
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+      }
+
+      .to_the_left {
+        max-width: 100%;
+      }
+
+      .to_the_right {
+        width: 100%;
+      }
+
+      .tv img {
+        width: 100%;
+      }
+
+      .tv_video {
+        position: static;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-top: 20px;
+      }
+
+      video {
+        width: 100%;
+      }
+
+      .mobile img {
+        max-width: 100%;
+        margin-left: 0;
+        float: none;
+      }
+
+      .strangerthing-container {
+        flex-direction: column;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .strangerthing {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .strangerthing img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .strangerthing1 p {
+        font-size: 16px;
+      }
+
+      .strangerthing_img img {
+        height: 30px;
+        float: none;
+        margin-top: 10px;
+      }
+
+      .contain4 {
+        width: 100%;
+      }
+
+      footer {
+        padding: 40px 20px;
+        font-size: 12px;
+      }
+    }

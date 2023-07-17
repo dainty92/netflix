@@ -300,7 +300,7 @@ footer .end {
       }
 
       .tv_video {
-        position: static;
+/*         position: static; */
         top: auto;
         right: auto;
         transform: none;
@@ -342,7 +342,7 @@ footer .end {
       }
 
       .strangerthing_img img {
-        height: 30px;
+/*         height: 30px; */
         float: none;
         margin-top: 10px;
       }
